@@ -1,8 +1,8 @@
 @tailwind utilities;
 
 .masked-image {
-  -webkit-mask-image: url("/assets/favpng_mask-black-white-removebg-preview.png");
-  mask-image: url("/assets/Vector.png");
+  -webkit-mask-image: url("/assets/mask.png");
+  mask-image: url("/assets/mask.png");
   mask-size: 100%;
   -webkit-mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
