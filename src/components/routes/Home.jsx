@@ -84,7 +84,7 @@ const Home = () => {
         <div className="">
           <img
             className="masked-image max-w-[80%] h-auto mx-auto md:mx-2"
-            src="../../../assets/portfolio_img.jpg"
+            src="/assets/portfolio_img.jpg"
           />
         </div>
       </div>
