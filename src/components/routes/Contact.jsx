@@ -48,27 +48,29 @@ const Contact = () => {
           </p>
         ) : (
           <form onSubmit={handleSubmit}>
-            <div className="flex mb-4">
-              <div>
+            <div className="md:flex mb-0 md:mb-4">
+              <div className="mb-4 md:mb-0">
                 <label htmlFor="name" className="text-sm">
                   Name
                 </label>
+                <br />
                 <input
                   id="name"
                   type="text"
-                  className="bg-transparent border-b-2 border-white focus:outline-none"
+                  className="bg-transparent w-full md:w-auto border-b-2 border-white focus:outline-none"
                   name="name"
                   autoComplete="off"
                 />
               </div>
-              <div className="ml-4 ">
+              <div className="ml-0  md:ml-4 mb-4 md:mb-0">
                 <label htmlFor="email" className="text-sm">
                   Email Address
                 </label>
+                <br />
                 <input
                   id="email"
                   type="email"
-                  className="bg-transparent border-b-2 border-white focus:outline-none"
+                  className="bg-transparent w-full md:w-auto border-b-2 border-white focus:outline-none"
                   name="email"
                   autoComplete="off"
                 />
@@ -84,10 +86,11 @@ const Contact = () => {
             <label htmlFor="message" className="text-sm">
               Message
             </label>
+            <br />
             <input
               type="text"
               id="message"
-              className="bg-transparent w-[92%] border-b-2 border-white focus:outline-none"
+              className="bg-transparent w-full md:w-[92%] border-b-2 border-white focus:outline-none"
               name="message"
               autoComplete="off"
             />
