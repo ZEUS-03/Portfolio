@@ -49,7 +49,7 @@ const Home = () => {
       </div>
       <div className="font-body relative md:w-1/2 md:px-20 ">
         <img
-          src="../../../assets/Vector.svg"
+          src="/assets/Vector.svg"
           alt="Vector"
           className="absolute w-1/4 h-1/4 z-0 left-12"
         />

@@ -31,7 +31,7 @@ const About = () => {
           <div className="md:w-1/3">
             <img
               className="masked-image mx-auto md:mx-0 mb-2"
-              src="../../../assets/portfolio_img2.jpg"
+              src="/assets/portfolio_img2.jpg"
             />
             <h1 className="font-bold text-[24px]  text-center text-transparent tracking-tighter bg-clip-text bg-gradient-to-r from-purple-500 via-pink-400 to-orange-500">
               GAUTAM SHARMA
@@ -41,7 +41,7 @@ const About = () => {
               <span>based in</span>{" "}
               <span className="italic font-extrabold ">Jaipur, India</span>
             </p>
-            <a href="../../../assets/Gautam's Resume.pdf" className="">
+            <a href="/assets/Gautam's Resume.pdf" className="">
               <div className=" text-black text-sm font-medium flex underline justify-center items-center hover:scale-105 transition duration-300 max-w-xs">
                 <span>Download Resume!</span>
                 <div className="p-1">
@@ -116,7 +116,7 @@ const About = () => {
             refined my abilities to engineer dynamic and user-centric
             applications. Here's a glimpse of my expertise.
           </p>
-          <a href="../../../assets/Gautam's Resume.pdf">
+          <a href="/assets/Gautam's Resume.pdf">
             <Button
               text={"Download my resume."}
               divClass={"w-[65%] mx-auto md:mx-0 md:w-[80%]"}
