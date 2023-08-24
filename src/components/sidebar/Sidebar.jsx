@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 import {
   TiSocialGithub,
@@ -9,7 +9,7 @@ import {
 import { Link } from "react-router-dom/dist";
 
 const Sidebar = ({ width, position }) => {
-  const [isActive1, setIsActive] = useState("home");
+  const location = useLocation();
 
   return (
     <div
@@ -26,13 +26,10 @@ const Sidebar = ({ width, position }) => {
               isActive ? "font-extrabold transition-transform duration-300" : ""
             } `
           }
-          onClick={() => {
-            setIsActive("home");
-          }}
         >
           <span className="inline-block pr-1 relative z-10">
             HOME
-            {isActive1 === "home" && (
+            {location.pathname === "/" && (
               <span className="absolute bottom-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-purple-500 to-orange-500 scale-x-100 transition-transform duration-300 z-[-1]"></span>
             )}
           </span>
@@ -46,13 +43,10 @@ const Sidebar = ({ width, position }) => {
                 : ""
             } `
           }
-          onClick={() => {
-            setIsActive("about");
-          }}
         >
           <span className="inline-block pr-1 relative z-10">
             ABOUT
-            {isActive1 === "about" && (
+            {location.pathname === "/about" && (
               <span className="absolute bottom-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-purple-500 to-orange-500 scale-x-100 transition-transform duration-300 z-[-1]"></span>
             )}
           </span>
@@ -66,13 +60,27 @@ const Sidebar = ({ width, position }) => {
                 : ""
             } `
           }
-          onClick={() => {
-            setIsActive("work");
-          }}
         >
           <span className="inline-block pr-1 relative z-10">
             WORK
-            {isActive1 === "work" && (
+            {location.pathname === "/work" && (
+              <span className="absolute bottom-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-purple-500 to-orange-500 scale-x-100 transition-transform duration-300 z-[-1]"></span>
+            )}
+          </span>
+        </NavLink>
+        <NavLink
+          to="/skills"
+          className={({ isActive }) =>
+            `my-3 w-auto ${
+              isActive
+                ? "font-extrabold  transition-transform duration-300"
+                : ""
+            } `
+          }
+        >
+          <span className="inline-block pr-1 relative z-10">
+            SKILLS
+            {location.pathname === "/skills" && (
               <span className="absolute bottom-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-purple-500 to-orange-500 scale-x-100 transition-transform duration-300 z-[-1]"></span>
             )}
           </span>
@@ -84,13 +92,10 @@ const Sidebar = ({ width, position }) => {
               isActive ? "font-extrabold transition-transform duration-300" : ""
             } `
           }
-          onClick={() => {
-            setIsActive("contact");
-          }}
         >
           <span className="inline-block pr-1 relative z-10">
             CONTACT
-            {isActive1 === "contact" && (
+            {location.pathname === "/contact" && (
               <span className="absolute bottom-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-purple-500 to-orange-500 scale-x-100 transition-transform duration-300 z-[-1]"></span>
             )}
           </span>

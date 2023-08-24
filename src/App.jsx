@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Sidebar from "./components/sidebar/Sidebar";
 import About from "./components/routes/About";
-import Blog from "./components/routes/Blog";
 import Home from "./components/routes/Home";
 import Contact from "./components/routes/Contact";
 import MobileSidebar from "./components/sidebar/MobileSidebar";
 import Work from "./components/routes/Work";
+import Skills from "./components/routes/Skills";
 
 const App = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -38,6 +38,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/skills" element={<Skills />} />
           </Routes>
         </div>
       </div>

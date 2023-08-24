@@ -5,19 +5,11 @@ import { MdWorkOutline } from "react-icons/md";
 import { RiProfileLine } from "react-icons/ri";
 import { GrLocation } from "react-icons/gr";
 import { ImQuotesLeft, ImArrowUpRight2 } from "react-icons/im";
-import {
-  SiJavascript,
-  SiReact,
-  SiPython,
-  SiNodedotjs,
-  SiMysql,
-  SiMongodb,
-  SiTailwindcss,
-  SiExpress,
-} from "react-icons/si";
 
 import Icon from "../helper/Icon";
 import Button from "../helper/Button";
+import Experience from "../helper/Experience";
+import { PREVIOUS_WORKS } from "../helper/constant.jsx";
 
 const About = () => {
   return (
@@ -110,13 +102,13 @@ const About = () => {
       </div>
       <div className="md:flex text-white bg-gradient-to-r from-purple-500 via-pink-400 to-orange-500 px-5 md:pl-20 py-10 md:items-center md:py-20 font-body">
         <div className="w-full md:w-1/3">
-          <h1 className="font-bold text-3xl mb-2">Tech Stack</h1>
+          <h1 className="font-bold text-3xl mb-2">EXPERIENCE</h1>
           <p className=" mb-10 font-light">
-            Harnessing a year of immersive web development experience, I've
-            refined my abilities to engineer dynamic and user-centric
-            applications. Here's a glimpse of my expertise.
+            Stepping into the realm of professional accomplishments, my
+            experience section paints a vivid picture of my journey . Here's a
+            glimpse of my experience.
           </p>
-          <a href="/assets/Gautam's Resume.pdf">
+          <a href="/assets/Gautam's Resume.pdf" target="_blank">
             <Button
               text={"Download my resume."}
               divClass={"w-[65%] mx-auto md:mx-0 md:w-[80%]"}
@@ -125,65 +117,17 @@ const About = () => {
             </Button>
           </a>
         </div>
-        <div className="w-full md:w-[66%] flex justify-around md:mx-5">
-          <div className="justify-start">
-            <Icon
-              text={"JavaScript"}
-              divClass={""}
-              textClass={"text-[14px] pt-2"}
-            >
-              <SiJavascript
-                size={32}
-                className=" hover:text-yellow-300 transition duration-300 rounded-full"
+        <div className="w-full md:w-[66%] mx-2 md:mx-7">
+          {PREVIOUS_WORKS.map((work, index) => {
+            return (
+              <Experience
+                key={index}
+                time={work.time}
+                company={work.company}
+                position={work.position}
               />
-            </Icon>
-            <Icon text={"React.js"} textClass={"text-[14px] pt-2"}>
-              <SiReact
-                size={32}
-                className=" hover:text-[#79dffc] transition duration-300  rounded-full"
-              />
-            </Icon>
-            <Icon text={"Express.js"} textClass={"text-[14px] pt-2"}>
-              <SiExpress
-                size={32}
-                className=" hover:text-black transition duration-300 rounded-full"
-              />
-            </Icon>
-            <Icon text={"MySQL"} textClass={"text-[14px] pt-2"}>
-              <SiMysql
-                size={32}
-                className=" hover:text-[#085f8b] transition duration-300 rounded-full"
-              />
-            </Icon>
-          </div>
-          <div className=" justify-start items-center">
-            <Icon text={"Python"} textClass={"text-[14px] pt-2"}>
-              <SiPython
-                size={32}
-                className=" hover:text-[#3d79ab] transition duration-300 rounded-full"
-              />
-            </Icon>
-            <Icon text={"Node.js"} textClass={"text-[14px] pt-2"}>
-              <SiNodedotjs
-                size={32}
-                className=" hover:text-[#86cf31] transition duration-300 rounded-full"
-              />
-            </Icon>
-
-            <Icon text={"Tailwind CSS"} textClass={"text-[14px] pt-2"}>
-              <SiTailwindcss
-                size={32}
-                className=" hover:text-[#37afe5] transition duration-300 rounded-full"
-              />
-            </Icon>
-
-            <Icon text={"MongoDB"} textClass={"text-[14px] pt-2"}>
-              <SiMongodb
-                size={32}
-                className=" hover:text-[#57ae52] transition duration-300"
-              />
-            </Icon>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>
