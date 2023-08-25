@@ -33,7 +33,7 @@ const About = () => {
               <span>based in</span>{" "}
               <span className="italic font-extrabold ">Jaipur, India</span>
             </p>
-            <a href="/assets/Gautam's Resume.pdf" className="">
+            <a href="/assets/Gautam's Resume.pdf" target="_blank" className="">
               <div className=" text-black text-sm font-medium flex underline justify-center items-center hover:scale-105 transition duration-300 max-w-xs">
                 <span>Download Resume!</span>
                 <div className="p-1">
