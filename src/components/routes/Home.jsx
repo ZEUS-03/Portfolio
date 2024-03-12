@@ -49,6 +49,7 @@ const Home = () => {
       </div>
       <div className="font-body relative md:w-1/2 md:px-20 ">
         <img
+          loading="lazy"
           src="/assets/Vector.svg"
           alt="Vector"
           className="absolute w-1/4 h-1/4 z-0 left-12"
@@ -83,6 +84,7 @@ const Home = () => {
       <div className="md:w-1/2">
         <div className="">
           <img
+            loading="lazy"
             className="masked-image max-w-[80%] h-auto mx-auto md:mx-2"
             src="/assets/portfolio_img.jpg"
           />

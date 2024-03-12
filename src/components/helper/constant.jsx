@@ -49,12 +49,12 @@ export const PREVIOUS_WORKS = [
   {
     time: "April, 2023 - Present",
     company: "Sarvika Technologies",
-    position: "JR. SOFTWARE DEVELOPER",
+    position: "SOFTWARE ENGINEER",
   },
   {
-    time: "Sept, 2020 - March, 2021",
+    time: "July, 2020 - March, 2021",
     company: "Rams Creative Technologies",
-    position: "MACHINE LEARNING INTERN",
+    position: "JAVASCRIPT DEVELOPER",
   },
 ];
 

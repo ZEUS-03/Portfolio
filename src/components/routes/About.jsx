@@ -23,6 +23,7 @@ const About = () => {
           <div className="md:w-1/3">
             <img
               className="masked-image mx-auto md:mx-0 mb-2"
+              loading="lazy"
               src="/assets/portfolio_img2.jpg"
             />
             <h1 className="font-bold text-[24px]  text-center text-transparent tracking-tighter bg-clip-text bg-gradient-to-r from-purple-500 via-pink-400 to-orange-500">
@@ -33,7 +34,7 @@ const About = () => {
               <span>based in</span>{" "}
               <span className="italic font-extrabold ">Jaipur, India</span>
             </p>
-            <a href="/assets/Gautam Resume.docx" target="_blank" className="">
+            <a href="/assets/Gautam's Resume.pdf" target="_blank" className="">
               <div className=" text-black text-sm font-medium flex underline justify-center items-center hover:scale-105 transition duration-300 max-w-xs">
                 <span>Download Resume!</span>
                 <div className="p-1">
@@ -59,7 +60,7 @@ const About = () => {
                 </Icon>
               </div>
               <div className="ml-8">
-                <Icon text="22 yrs" textClass="text-[14px]">
+                <Icon text="23 yrs" textClass="text-[14px]">
                   <RiProfileLine size={14} className="rounded-full" />
                 </Icon>
                 <Icon text="Jaipur, India" textClass="text-[14px] ">

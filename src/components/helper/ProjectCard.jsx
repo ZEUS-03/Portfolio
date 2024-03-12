@@ -17,6 +17,7 @@ const ProjectCard = ({ heading, title, link, image }) => {
         className="hover:scale-105 transition ease-in-out duration-300 hover:shadow-xl"
       >
         <img
+          loading="lazy"
           src={image}
           className="w-[215px] h-[150px] object-cover rounded-lg"
         />
