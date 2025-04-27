@@ -27,7 +27,7 @@ const Sidebar = ({ width, position }) => {
             } `
           }
         >
-          <span className="inline-block pr-1 relative z-10">
+          <span className="inline-block pr-1 relative z-10 group-hover:text-sky-500 transition-all duration-300">
             HOME
             {location.pathname === "/" && (
               <span className="absolute bottom-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-gradient-to-r from-purple-500 to-orange-500 scale-x-100 transition-transform duration-300 z-[-1]"></span>

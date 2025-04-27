@@ -10,8 +10,8 @@ import {
   SiMongodb,
   SiTailwindcss,
   SiCss3,
-  SiExpress,
-  SiCplusplus,
+  SiNextdotjs,
+  SiTypescript,
   SiGit,
   SiGithub,
   SiJira,
@@ -19,28 +19,36 @@ import {
 
 export const PROJECTS_INFO = [
   {
-    heading: "MERN App",
-    title: "Ecommerce Fullstack Application",
-    image: "/assets/chat.jpg",
-    link: "https://github.com/ZEUS-03/E-commerce-App",
+    heading: "Space wars",
+    title: "Multiplayer Space Game",
+    image: "/assets/spacewars.webp",
+    link: "https://github.com/ZEUS-03/Space-Wars",
+    liveURL: "https://spacewars-gamma.vercel.app/",
   },
   {
     heading: "MERN App",
+    title: "Ecommerce Fullstack Application",
+    image: "/assets/chat.webp",
+    link: "https://github.com/ZEUS-03/E-commerce-App",
+  },
+  {
+    heading: "Social Vibes",
     title: "Social Media Application",
-    image: "/assets/sm.jpg",
+    image: "/assets/sm.webp",
     link: "https://github.com/ZEUS-03/MERN-social-media-",
+    liveURL: "https://social-vibes.vercel.app/",
   },
 
   {
     heading: "React Application",
     title: "Portfolio Website",
-    image: "/assets/pf.jpg",
+    image: "/assets/pf.webp",
     link: "#",
   },
   {
     heading: "JS App",
     title: "Task Manager Application",
-    image: "/assets/4886082.jpg",
+    image: "/assets/4886082_blurred.webp",
     link: "https://github.com/ZEUS-03/Task-manager-firebase",
   },
 ];
@@ -50,11 +58,31 @@ export const PREVIOUS_WORKS = [
     time: "April, 2023 - Present",
     company: "Sarvika Technologies",
     position: "SOFTWARE ENGINEER",
+    url: "https://www.sarvika.com/",
+    tools: "🛠️ React.js, Next.js, Typescript, Tailwind, Redux",
+    responsibilities: [
+      "Developed a multi-vendor e-commerce platform using React.js, Next.js, and Tailwind CSS to streamline product management, user access control, and marketplace operations. Key features include:",
+      "User Access Management: Implemented secure authentication and role-based authorization for different user types.",
+      "Product Management: Created intuitive dashboards for vendors to manage products, inventory, and pricing.",
+      "Market Management: Built admin interfaces to manage multiple vendors, track sales performance, and generate reports.",
+    ],
   },
   {
     time: "July, 2020 - March, 2021",
     company: "Rams Creative Technologies",
-    position: "JAVASCRIPT DEVELOPER",
+
+    position: "SOFTWARE ENGINEER INTERN",
+    url: "https://www.yeppar.com/",
+    tools: "🛠️ Javascript, Python, OpenCV, Express.js, MongoDB",
+    responsibilities: [
+      "Automated data processing and developed internal tools using Python and JavaScript. Key contributions include:",
+
+      "Data Processing Automation: Developed Python scripts to automate data cleaning, transformation, and aggregation, improving data processing efficiency.",
+
+      "Image Processing for ML: Created image processing scripts to enhance data set quality, improving the performance of machine learning models.",
+
+      "Internal Tools: Built custom JavaScript-based tools for data validation and visualization, enabling more efficient data management and faster decision-making.",
+    ],
   },
 ];
 
@@ -75,10 +103,10 @@ export const TECH_SKILLS = [
             className=" hover:text-[#3d79ab] transition duration-300 rounded-full ml-4"
           />
         </Icon>
-        <Icon text={"C++"} textClass={"text-[14px] pt-2"}>
-          <SiCplusplus
+        <Icon text={"Typescript"} textClass={"text-[14px] pt-2"}>
+          <SiTypescript
             size={32}
-            className=" hover:text-[#3546ff] transition duration-300 rounded-full ml-4"
+            className=" hover:text-[#478dfe] transition duration-300 rounded-full ml-4"
           />
         </Icon>
       </div>
@@ -118,8 +146,8 @@ export const TECH_SKILLS = [
             className=" hover:text-[#86cf31] transition duration-300 rounded-full ml-4"
           />
         </Icon>
-        <Icon text={"Express.js"} textClass={"text-[14px] pt-2"}>
-          <SiExpress
+        <Icon text={"Next.js"} textClass={"text-[14px] pt-2"}>
+          <SiNextdotjs
             size={32}
             className=" hover:text-gray-500 transition duration-300 rounded-full ml-4"
           />
